@@ -4,7 +4,7 @@
   <ShortName>Ailuntz_docs</ShortName>
   <Description>Search Ailuntz_docs</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">https://your-docusaurus-site.example.com/node_docs_docusaurus_temp/img/favicon1.ico</Image>
+  <Image width="16" height="16" type="image/x-icon">https://your-docusaurus-site.example.com/node_docs_docusaurus_temp/img/favicon.ico</Image>
   <Url type="text/html" method="get" template="https://your-docusaurus-site.example.com/node_docs_docusaurus_temp/search?q={searchTerms}"/>
   <Url type="application/opensearchdescription+xml" rel="self" template="https://your-docusaurus-site.example.com/node_docs_docusaurus_temp/opensearch.xml" />
   <moz:SearchForm>https://your-docusaurus-site.example.com/node_docs_docusaurus_temp/</moz:SearchForm>

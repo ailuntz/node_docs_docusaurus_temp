@@ -8,7 +8,7 @@ import type {Options as ClientRedirectsOptions} from '@docusaurus/plugin-client-
 const config: Config = {
   title: 'Ailuntz_docs',
   tagline: '不是金子、不会发光 、不用等待、不必期待、不再见、不思念。谢谢',
-  favicon: 'img/favicon1.ico',
+  favicon: 'img/favicon.ico',
   
   // Set the production url of your site here
   url: 'https://your-docusaurus-site.example.com',
@@ -141,9 +141,9 @@ const config: Config = {
     [
       'content-docs',
       {
-        id: 'intelligent',
+        id: 'ailintelligent',
         path: 'ail_intelligent',
-        routeBasePath: 'intelligent',
+        routeBasePath: 'ailintelligent',
         editUrl:
         'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         editCurrentVersion: true,
@@ -152,6 +152,64 @@ const config: Config = {
         showLastUpdateTime: true,
       } satisfies DocsOptions,
     ],
+    [
+      'content-docs',
+      {
+        id: 'ailnav',
+        path: 'ail_nav',
+        routeBasePath: 'ailnav',
+        editUrl:
+        'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+        editCurrentVersion: true,
+        sidebarPath: 'sidebars/general.ts',
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+      } satisfies DocsOptions,
+    ],
+    [
+      'content-docs',
+      {
+        id: 'ailtool',
+        path: 'ail_tool',
+        routeBasePath: 'ailtool',
+        editUrl:
+        'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+        editCurrentVersion: true,
+        sidebarPath: 'sidebars/general.ts',
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+      } satisfies DocsOptions,
+    ],
+    [
+      'content-docs',
+      {
+        id: 'ailapi',
+        path: 'ail_api',
+        routeBasePath: 'ailapi',
+        editUrl:
+        'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+        editCurrentVersion: true,
+        sidebarPath: 'sidebars/general.ts',
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+      } satisfies DocsOptions,
+    ],
+    [
+      'content-docs',
+      {
+        id: 'ailtodo',
+        path: 'ail_todo',
+        routeBasePath: 'ailtodo',
+        editUrl:
+        'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+        editCurrentVersion: true,
+        sidebarPath: 'sidebars/general.ts',
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+      } satisfies DocsOptions,
+    ],
+
+
     // [
     //   'client-redirects',
     //   {
@@ -200,22 +258,22 @@ const config: Config = {
           label: '😊',
         },
         {
+          to: '/ailnav/intro',
+          position: 'left',
+          label: '导航',
+          activeBaseRegex: `/ailnav/`,
+        },
+        {
           to: '/ailbasis/intro',
           position: 'left',
           label: '基础',
           activeBaseRegex: `/ailbasis/`,
-        },
-        {
-          to: '/ailcode/intro',
-          position: 'left',
-          label: '编程',
-          activeBaseRegex: `/ailcode/`,
-        },
-        {
-          to: '/aildepoly/intro',
-          position: 'left',
-          label: '部署',
-          activeBaseRegex: `/aildepoly/`,
+          items:[
+            {
+              label:'系统',
+              to:'/ailbasis/intro',
+            },
+          ],
         },
         {
           to: '/ailtheory/intro',
@@ -224,16 +282,46 @@ const config: Config = {
           activeBaseRegex: `/ailtheory/`,
         },
         {
+          to: '/ailcode/intro',
+          position: 'left',
+          label: '编程',
+          activeBaseRegex: `/ailcode/`,
+        },
+        {
+          to: '/ailtool/intro',
+          position: 'left',
+          label: '工具',
+          activeBaseRegex: `/ailtool/`,
+        },
+        {
+          to: '/ailapi/intro',
+          position: 'left',
+          label: '接口',
+          activeBaseRegex: `/ailtapi/`,
+        },
+        {
+          to: '/aildepoly/intro',
+          position: 'left',
+          label: '部署',
+          activeBaseRegex: `/aildepoly/`,
+        },
+        {
+          to: '/ailintelligent/intro',
+          position: 'left',
+          label: 'Intelligent',
+          activeBaseRegex: `/ailintelligent/`,
+        },
+        {
           to: '/ailstudies/intro',
           position: 'left',
           label: '学术',
           activeBaseRegex: `/ailstudies/`,
         },
         {
-          to: '/intelligent/intro',
+          to: '/ailtudo/intro',
           position: 'left',
-          label: 'Intelligent',
-          activeBaseRegex: `/intelligent/`,
+          label: 'to do',
+          activeBaseRegex: `/ailtodo/`,
         },
         // {to: '/blog', label: 'ailuntz_log', position: 'left'},
         {
