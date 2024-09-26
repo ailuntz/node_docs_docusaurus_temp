@@ -8,7 +8,7 @@ numpy 1.26.4  #指定版本
 ```
 
 ### opencv
-
+```
 (vscode 中 运行opencv，必须要tasks.json文件，launch和c_cpp_properties不要都可以，参数中必须添加在
             "args": [
                 "-fdiagnostics-color=always",
@@ -25,4 +25,4 @@ numpy 1.26.4  #指定版本
             ],
 )
 
-
+```
