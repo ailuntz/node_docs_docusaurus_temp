@@ -1,0 +1,20 @@
+### 配置代理
+```
+容器中专用
+export http_proxy="http://192.168.8.98:1081"
+export https_proxy="http://192.168.8.98:1081"
+
+export http_proxy=127.0.0.1:1081
+export https_proxy=127.0.0.1:1081
+```
+### 取消代理
+```
+unset http_proxy
+unset https_proxy
+unset no_proxy
+```
+
+### nodejs 换源
+```
+npm config set registry https://registry.npmmirror.com
+```

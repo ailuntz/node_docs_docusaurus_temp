@@ -23,6 +23,7 @@ export default function MyReactPage() {
     <Layout>
       <h1>My React page</h1>
       <p>This is a React page</p>
+      <h1 className="purple-text">Purple Heading!</h1>
     </Layout>
   );
 }

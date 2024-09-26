@@ -1,6 +1,7 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import VideoBackground from './VideoBackground';
 
 type FeatureItem = {
   title: string;
@@ -59,6 +60,8 @@ export default function HomepageFeatures(): JSX.Element {
   return (
     <section className={styles.features}>
       <div className="container">
+      {/* <VideoBackground /> */}
+      <h1 className="purple-text">Purple Heading!</h1>
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
